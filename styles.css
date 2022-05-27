@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  height: 100vh;
+   background-color: #FF3CAC;
+   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  display: grid;
+  place-items: center;
+}
+.contenedor{
+  width: 370px;
+  height: 505px;
+  background-color: rgba(255, 255, 255, 0.061);
+  box-shadow: 1px 1px 5px #fff;
+}
+.logo{
+  display: inline-block;
+  margin-top: 1.8em;
+  margin-left: 5em;
+}
+.logo__titulo{
+  display: inline;
+  font-family: 'Short Stack', cursive;
+  color: #fff;
+  text-shadow: 1px 1px 15px #fff;
+}
+.logo__icono{
+font-size: 1.7rem;
+color: #fff;
+}
+.separador{
+  display: inline-block;
+  width: 75%;
+  border-bottom: 1px solid #c2c2c2;
+  margin: 0 0 .5em  2.5em;
+  padding-bottom: 1em;
+  opacity: .3;
+}
+.contenedor__centrar{
+  margin-top: 1em;
+  margin-left: 2.5em;
+}
+.grilla__ul{
+  display: grid;
+  grid-template-columns: 15px 250px;
+  gap: .9em;
+}
+.grilla__li{
+  display: contents;
+}
+:where(
+input[type="text"], 
+input[type="email"], 
+input[type="submit"], select){
+  background: none;
+  outline: none;
+  border: 0;
+
+  display: block;
+  padding: .7em;
+  background-color: #a196bb;
+  border-radius: .5em;
+  font-size: .8rem;
+  box-shadow: inset 0px 0px 5px #5e4e96;
+}
+input:focus {
+  background-color: #a196bb;
+  border: 1px solid #988ab9;
+}
+  
+::placeholder, .cambiar__color{
+  font-size: .7rem;
+  color: #4d24ac;
+  opacity: .3;
+}
+
+.li__iconos{
+  align-self: center;
+
+  font-size: 20px;
+  color: #a196bb;
+}
+.btn__contenedor{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.boton__registrar{
+  display: block;
+  width: 50%;
+  font-size: 14px;
+  padding: .7em 0;
+  background-color: #9374cb;
+  margin-left: 2.3vw;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.boton__registrar:hover{
+  box-shadow: 1px 1px 5px #fff;
+  color: #ffffff;
+  font-weight: bold;
+}
